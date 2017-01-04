@@ -12,5 +12,4 @@ Verteego's purpose is to provide a set of tools commonly used by data scientists
    :maxdepth: 2
    :caption: User Documentation
 
-   index
    getting-started
