@@ -2,9 +2,9 @@ Docs
 ========================
 
 
-The code is open source, and `available on github`_.
+Verteego Data Science Suite was built to deliver a plug-and-play environment for data scientists enabling both fast prototyping and scalable deployment.
 
-The main documentation for the site is organized into a couple sections:
+Verteego's purpose is to provide a set of tools commonly used by data scientists. Verteego is not another big data platform but a best-of-breed selection of the most powerful big data solutions currently available.
 
 
 
