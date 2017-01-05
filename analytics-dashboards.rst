@@ -10,7 +10,7 @@ Verteego Data Science Suite offers extensive analytics and dashboarding capabili
 
 The analytics and dashboarding module is powered by Superset, a data exploration platform designed to be visual, intuitive and interactive.
 
-To dive deeper into the technology the best way is probably to check out the `Superset Github <https://github.com/airbnb/superset target="_blank">`_ and the `user group <https://groups.google.com/forum/#!forum/airbnb_superset>`_.
+To dive deeper into the technology the best way is probably to check out the `Superset Github <https://github.com/airbnb/superset>`_ and the `user group <https://groups.google.com/forum/#!forum/airbnb_superset>`_.
 
 **Database connections**
 
