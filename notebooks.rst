@@ -2,7 +2,7 @@
 Notebooks
 #########
 
-Notebooks allow you to create custom scripts that can be run within your dataflow using the *ExecuteProcess* and *ExecuteStreamCommand* processors.
+Notebooks enable you to write custom scripts that can be run within your dataflow using the *ExecuteProcess* and *ExecuteStreamCommand* processors.
 
 Verteego comes with a few pre-installed kernels to cover the most common languages used by data scientists:
 
