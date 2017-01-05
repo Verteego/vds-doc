@@ -13,4 +13,5 @@ The analytics and dashboarding module is powered by Superset, a data exploration
 To dive deeper into the technology the best way is probably to check out the `Superset Github <https://github.com/airbnb/superset>`_ and the `user group <https://groups.google.com/forum/#!forum/airbnb_superset>`_.
 
 **Database connections**
+
 The analytics and dashboarding module can be connected to a variety of databases using the `SQL alchemy libraries <http://www.sqlalchemy.org/>`_.
