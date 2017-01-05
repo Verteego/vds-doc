@@ -16,6 +16,6 @@ The integrated notebooks run on `Jupyter <https://jupyter.readthedocs.io/en/late
 
 **Install additional kernels**
 
-If you need kernels that are not pre-installed with your package of Verteego you can find more of them here:
+If you need programming languages that are not pre-installed with your package of Verteego you can find more of them here:
 
-`List of community supported kernels <https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages>`_
+`List of community supported language kernels <https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages>`_
