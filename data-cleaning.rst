@@ -16,7 +16,7 @@ The data cleaning module integrates a powerful expression language allowing to a
 
 `GREL documentation <https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language>`_
 
-**Running cleaning task in dataflow**
+**Running cleaning tasks in dataflow**
 
 The data flow module offers several processors that can be used to apply a cleaning script to a data flow. You can find them amongst the other processors by typing "Openrefine" in the processor search field.
 
