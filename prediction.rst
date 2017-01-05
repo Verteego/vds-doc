@@ -26,7 +26,6 @@ You may find the full documentation and tutorials `here <http://docs.h2o.ai/h2o/
 
 **Predictive models**
 
-Models trained on H2O are packaged as `POJO <https://en.wikipedia.org/wiki/Plain_Old_Java_Object>`_
- (Plain Old Java Object) files that can easily be deployed and executed within the dataflow.
+Models trained on H2O are packaged as `POJO <https://en.wikipedia.org/wiki/Plain_Old_Java_Object>`_ (Plain Old Java Object) files that can easily be deployed and executed within the dataflow.
 
 `Examples of production environments <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/productionizing.html>`_
