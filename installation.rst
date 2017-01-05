@@ -2,13 +2,11 @@
 Installation
 ############
 
-Verteego Data Science Suite uses Ansible to run the automatic installation process for you.
+You'll need have Ansible running on your local machine to run the automatic installation process for you.
 
 
 1. Install Ansible
 """""""""""""""
-
-You'll need have Ansible running on your local machine.
 
 **Linux**
 
