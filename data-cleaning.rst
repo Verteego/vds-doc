@@ -10,13 +10,13 @@ The data cleaning module provides a powerful user interface to define a stack of
 
 The data cleaning module is powered by Google's Open Refine Technology. You can find a full user documentation `here <https://github.com/OpenRefine/OpenRefine/wiki>`_
 
-** General Refine Expression Language (GREL) **
+**General Refine Expression Language (GREL)**
 
 The data cleaning module integrates a powerful expression language allowing to apply precise transformation and cleaning tasks to your data.
 
 `GREL documentation <https://github.com/OpenRefine/OpenRefine/wiki/General-Refine-Expression-Language>`_
 
-** Running cleaning task in dataflow **
+**Running cleaning task in dataflow**
 
 The data flow module offers several processors that can be used to apply a cleaning script to a data flow. You can find them amongst the other processors by typing "Openrefine" in the processor search field.
 
