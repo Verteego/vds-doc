@@ -1,6 +1,6 @@
-########################
+##########
 Prediction
-########################
+##########
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/prediction.png
 
@@ -20,12 +20,12 @@ Supported algorithms are:
 
 **Technology**
 
-Verteego Data Science Suite's predictive technology is run on open source software H2O.
+Verteego Data Science Suite's predictive technology runs on open source software H2O.
 
-You may find the full documentation and tutorials `here <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/welcome.html>`_.
+You may find the full documentation and some tutorials `here <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/welcome.html>`_.
 
-**Predictive models**
+**Predictive modelling**
 
-Models trained on H2O are packaged as `POJO <https://en.wikipedia.org/wiki/Plain_Old_Java_Object>`_ (Plain Old Java Object) files that can easily be deployed and executed within the dataflow.
+Models trained on H2O are packaged as Plain Old Java Objects (`POJO <https://en.wikipedia.org/wiki/Plain_Old_Java_Object>`_) that can easily be deployed and executed within your dataflow.
 
-`Examples of production environments <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/productionizing.html>`_
+Check out some `examples of production environments <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/productionizing.html>`_.

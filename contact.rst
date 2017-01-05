@@ -2,6 +2,6 @@
 Contact us
 ############
 
-Need support, detected an issue or have any questions?
+Need support, detected an issue or have a question?
 
-`Drop a message on our Github <https://github.com/Verteego/dss-doc/issues/new>`_!
+`Drop a message to our community support <https://github.com/Verteego/dss-doc/issues/new>`_!

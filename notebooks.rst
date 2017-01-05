@@ -2,9 +2,9 @@
 Notebooks
 #########
 
-Notebooks allow you to create custom scripts that can be run in your dataflow using the ExecuteProcess or ExecuteStreamCommand processors.
+Notebooks allow you to create custom scripts that can be run within your dataflow using the *ExecuteProcess* and *ExecuteStreamCommand* processors.
 
-Current preinstalled kernels are:
+Verteego comes with a few pre-installed kernels to cover the most common languages used by data scientists:
 
 - Python 2.7
 - R
@@ -12,10 +12,10 @@ Current preinstalled kernels are:
 
 **Technology**
 
-The integrated notebooks run with `Jupyter <https://jupyter.readthedocs.io/en/latest/index.html>`_
+The integrated notebooks run on `Jupyter <https://jupyter.readthedocs.io/en/latest/index.html>`_.
 
 **Install additional kernels**
 
-If you need kernels that are not preinstalled with your package of Verteego please follow the specifc installation instructions.
+If you need kernels that are not pre-installed with your package of Verteego you can find more of them here:
 
 `List of community supported kernels <https://github.com/ipython/ipython/wiki/IPython-kernels-for-other-languages>`_

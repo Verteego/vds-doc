@@ -2,11 +2,11 @@
 Installation
 ############
 
-You'll need have Ansible running on your local machine to run the automatic installation process for you.
+You'll need to have Ansible running on your local machine to manage the automatic installation process for you.
 
 
 1. Install Ansible
-"""""""""""""""
+""""""""""""""""""
 
 **Linux**
 
@@ -22,7 +22,7 @@ On Windows do this.
 
 
 2. Install Verteego DSS
-""""""""""""""""""""
+"""""""""""""""""""""""
 
 **Installation on a virtual server**
 
