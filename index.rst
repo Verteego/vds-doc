@@ -35,6 +35,5 @@ Verteego's purpose is to provide a bundle of tools covering all common requireme
     :maxdepth: 2
     :caption: Support
 
-    faq
     contact
     community
