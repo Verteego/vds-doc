@@ -33,6 +33,7 @@ Verteego's purpose is to provide a bundle of tools covering all common requireme
 
 .. toctree::
     :maxdepth: 2
-    :caption: FAQ
+    :caption: Support
 
     faq
+    contact
