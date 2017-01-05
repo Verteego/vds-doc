@@ -3,6 +3,7 @@ Analytics & dashboarding
 ########################
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/analytics-dashboarding.png
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/data-cleaning.png
 
 Verteego Data Science Suite offers extensive analytics and dashboarding capabilities allowing to slice, dice and visualize the data at any step of your dataflow.
 
