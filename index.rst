@@ -15,3 +15,5 @@ Verteego's purpose is to provide a set of tools commonly used by data scientists
    getting-started
 
    :caption: User documentation
+
+   getting-started
