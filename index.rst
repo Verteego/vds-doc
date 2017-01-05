@@ -14,6 +14,8 @@ Verteego's purpose is to provide a set of tools commonly used by data scientists
 
    getting-started
 
+.. toctree::
+   :maxdepth: 2
    :caption: User documentation
 
    getting-started
