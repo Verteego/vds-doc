@@ -2,12 +2,11 @@
 Installation
 ############
 
-Verteego Data Science Suite uses Ansible to automatize the installation process.
+Verteego Data Science Suite uses Ansible to run the automatic installation process for you.
 
 
-Install Ansible
+1. Install Ansible
 """""""""""""""
-
 
 You'll need have Ansible running on your local machine.
 
@@ -24,7 +23,7 @@ On Mac OS do this
 On Windows do this.
 
 
-Install Verteego DSS
+2. Install Verteego DSS
 """"""""""""""""""""
 
 **Installation on a virtual server**
