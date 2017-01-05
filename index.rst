@@ -37,3 +37,4 @@ Verteego's purpose is to provide a bundle of tools covering all common requireme
 
     faq
     contact
+    community
