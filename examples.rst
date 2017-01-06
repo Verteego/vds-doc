@@ -9,3 +9,7 @@ Here are a few examples of what we and our users have built with the Verteego Da
 - `Clean and verify emails <http://www.verteego.com/email-list-verification-cleaning-tool-using-mx-records-nifi/>`_
 
 All scripts belonging to these examples can be downloaded on the `Verteego Github <https://github.com/Verteego>`_.
+
+**Prediction deployment examples**
+
+The H2O doc offers some `examples of prediction deployments <http://docs.h2o.ai/h2o/latest-stable/h2o-docs/productionizing.html>`_.
