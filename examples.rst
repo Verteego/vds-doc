@@ -1,6 +1,6 @@
-############
+########
 Examples
-############
+########
 
 Here are a few examples of what we and our users have built with the Verteego Data Science Suite:
 
