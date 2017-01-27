@@ -63,11 +63,11 @@ http://docs.ansible.com/ansible/intro_installation.html
 - Create google service account :
     - go to https://console.cloud.google.com/iam-admin/serviceaccounts
     - select the project into which you want to create a vds instance
-    - create service account :
+    - create service account with project editor role:
 
+    .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
 
     .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
-
 
     - copy the key file downloaded to VDS_ROOT/files and rename it to ansible.json
 
