@@ -5,7 +5,7 @@ Installation
 You'll need to have Ansible running on your local machine to manage the automatic installation process for you.
 
 
-1. Install Ansible Mehdi
+1. Install Ansible
 """"""""""""""""""
 
 **Linux**
