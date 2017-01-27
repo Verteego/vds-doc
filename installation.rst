@@ -65,7 +65,9 @@ http://docs.ansible.com/ansible/intro_installation.html
     - select the project into which you want to create a vds instance
     - create service account :
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
+
+    .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
+
 
     - copy the key file downloaded to VDS_ROOT/files and rename it to ansible.json
 
