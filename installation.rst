@@ -15,7 +15,7 @@ Clone the following repository to your local machine (NOT to the remote server w
 
 ::
 
-    git clone git@bitbucket.org:verteegois/dss.git
+    git clone git@github.com:Verteego/vds.git
 
 
 2. Install Ansible
