@@ -89,14 +89,16 @@ You should have a running Google Cloud platform account and the SDK installed.
     - Create a service account with project editor role
     - Check the "Furnish a new private key" option
     - Chose JSON key type
+    - Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
+
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
     :scale: 50%
 
+
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
     :scale: 50%
 
-    - Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
 
 ::
 
@@ -111,7 +113,7 @@ You should have a running Google Cloud platform account and the SDK installed.
     sudo pip install -U apache-libcloud
 
 
-**4. Launch playbook**
+**4. Launch installation**
 
 ::
 
