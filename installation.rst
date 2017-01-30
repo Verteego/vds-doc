@@ -61,11 +61,11 @@ You should have a running Google Cloud platform account and the SDK installed. I
 - Install GCloud SDK :
     - https://cloud.google.com/sdk/docs/
 - configure your account and project:
-.. code-block:: bash
+.. code-block::
     gcloud init
 
 - generate SSH key for gcloud:
-.. code-block:: bash
+.. code-block::
      gcloud compute config-ssh
 
 **2. Set up the VDS environment on Google Cloud**
