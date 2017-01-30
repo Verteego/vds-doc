@@ -68,7 +68,7 @@ http://docs.ansible.com/ansible/intro_installation.html
 You should have a running Google Cloud platform account and the SDK installed. It this is already the case you can directly proceed to step 2.
 
 - Install GCloud SDK : https://cloud.google.com/sdk/docs/
-- Configure your account and project:
+- Configure your account and project
 
 ::
 
@@ -76,7 +76,7 @@ You should have a running Google Cloud platform account and the SDK installed. I
 
 
 
-- generate SSH key for gcloud:
+- Generate SSH key for GCloud
 
 ::
 
@@ -98,7 +98,7 @@ You should have a running Google Cloud platform account and the SDK installed. I
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg ..
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
 
 
 - Install libcloud
