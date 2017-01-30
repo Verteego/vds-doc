@@ -8,7 +8,6 @@ Installation
 - SSH_ROOT: current user's .ssh directory path
 
 
-
 1. Install Ansible
 """"""""""""""""""
 You need to have Ansible installed on your local machine to manage the automatic installation process for you. If you don't have it yet, please install Ansible as we'll use it to deploy Verteego DS to your remote server.
@@ -28,11 +27,11 @@ http://docs.ansible.com/ansible/intro_installation.html
 
 2. Clone Verteego Data Suite
 """"""""""""""""""""""""""""
-Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). This repository will be called VDS_ROOT afterwards.
+Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). This repository will be called VDS_ROOT in the following.
 
 ::
 
-    git clone git@bitbucket.org:verteegois/dss.git
+    git clone git@github.com:Verteego/vds.git
 
 
 3. Install Verteego DS
@@ -122,5 +121,5 @@ You should have a running Google Cloud platform account and the SDK installed. I
 **LOGIN**
 
 For your first sign in you can use the following credentials. For security reasons, remember to change them or delete the default user after your first login.
-Username: dss-user
+Username: vds-user
 Password: verteego
