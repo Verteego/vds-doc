@@ -12,6 +12,7 @@ You'll need to have Ansible running on your local machine to manage the automati
 1. Clone Verteego Data Suite
 """"""""""""""""""""""""""""
 Clone the following repository to your local machine (NOT the remote server where you want to install Verteego DS, we'll precise this later).
+
 - git clone git@bitbucket.org:verteegois/dss.git
 
 2. Install Ansible
@@ -60,13 +61,11 @@ You should have a running Google Cloud platform account and the SDK installed. I
 - Install GCloud SDK :
     - https://cloud.google.com/sdk/docs/
 - configure your account and project:
-::
-
+.. code-block:: bash
     gcloud init
 
 - generate SSH key for gcloud:
-::
-
+.. code-block:: bash
      gcloud compute config-ssh
 
 **2. Set up the VDS environment on Google Cloud**
@@ -80,7 +79,6 @@ You should have a running Google Cloud platform account and the SDK installed. I
 ::
 
      mv Downloads/KEYFILE.json VDS_ROOT/deployment/ansible/files/
-
     .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
 
     .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
@@ -90,8 +88,8 @@ You should have a running Google Cloud platform account and the SDK installed. I
 
     sudo apt-get install python-pip
     sudo pip install -U apache-libcloud
-
 - launch playbook by going to ansible directory and running :
+
 ::
 
     ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
