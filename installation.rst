@@ -4,13 +4,13 @@ Installation
 
 **Please note that in the following installation instructions we use 2 placeholders for local directories: VDS_ROOT and SSH_ROOT. Just replace them with the correct directories from your system.**
 
-- VDS_ROOT: directory where Verteego Data Suite will be cloned
-- SSH_ROOT: current user's .ssh directory
+- VDS_ROOT: local directory where the installation package will be cloned to
+- SSH_ROOT: local .ssh directory
 
 
 1. Install Ansible
 """"""""""""""""""
-You need to have Ansible installed on your local machine to manage the automatic installation process for you. If you don't have it yet, please install Ansible as we'll use it to deploy Verteego DS to your remote server or Virtualbox.
+We'll use Ansible to deploy Verteego DS to your remote server or Virtualbox. If you don't have Ansible yet, please install it as we'll use Ansible to orchestrate the automatic installation process for you.
 
 **Linux**
 
@@ -27,7 +27,7 @@ http://docs.ansible.com/ansible/intro_installation.html
 
 2. Clone installation package
 """""""""""""""""""""""""""""
-Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). This repository will be called VDS_ROOT in the following.
+Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). We'll call this repository VDS_ROOT in the following.
 
 ::
 
