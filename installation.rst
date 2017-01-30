@@ -41,7 +41,7 @@ http://docs.ansible.com/ansible/intro_installation.html
 
 - Install Virtualbox : https://www.virtualbox.org/wiki/Downloads
 - Install Vagrant    : https://www.vagrantup.com/docs/installation/
-- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take sometime as it will download a full debian image to install on virtualbox):
+- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take sometime as it will download a full debian image to install on Virtualbox):
 
 ::
 
@@ -67,18 +67,20 @@ http://docs.ansible.com/ansible/intro_installation.html
 
 You should have a running Google Cloud platform account and the SDK installed. It this is already the case you can directly proceed to step 2.
 
-- Install GCloud SDK :
-    - https://cloud.google.com/sdk/docs/
-- configure your account and project:
+- Install GCloud SDK : https://cloud.google.com/sdk/docs/
+- Configure your account and project:
 
 ::
+
     gcloud init
+
 
 
 - generate SSH key for gcloud:
 
 ::
-     gcloud compute config-ssh
+
+    gcloud compute config-ssh
 
 
 **2. Set up the VDS environment on Google Cloud**
@@ -94,13 +96,15 @@ You should have a running Google Cloud platform account and the SDK installed. I
      mv Downloads/KEYFILE.json VDS_ROOT/deployment/ansible/files/
 
 
-    .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
 
-    .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg ..
+
 
 - Install libcloud
 
 ::
+
     sudo apt-get install python-pip
     sudo pip install -U apache-libcloud
 
@@ -108,6 +112,7 @@ You should have a running Google Cloud platform account and the SDK installed. I
 - Launch playbook:
 
 ::
+
     ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 
 
