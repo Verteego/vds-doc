@@ -2,7 +2,7 @@
 Installation
 ############
 
-You'll need to have Ansible running on your local machine to manage the automatic installation process for you.
+You need to have Ansible installed on your local machine to manage the automatic installation process for you.
 
 **Please note that in the following installation instructions we use 2 placeholders for local directories: VDS_ROOT and SSH_ROOT. Just replace them with the correct directories from your system.**
 
@@ -11,7 +11,7 @@ You'll need to have Ansible running on your local machine to manage the automati
 
 1. Clone Verteego Data Suite
 """"""""""""""""""""""""""""
-Clone the following repository to your local machine (NOT the remote server where you want to install Verteego DS, we'll precise this later).
+Clone the following repository to your local machine (NOT to the remote server where you want to install Verteego DS, as Ansible will automatically deploy the software to the remote server). In the following, this directory is named VDS_ROOT.
 
 ::
 
@@ -20,7 +20,7 @@ Clone the following repository to your local machine (NOT the remote server wher
 
 2. Install Ansible
 """"""""""""""""""
-We'll use Ansible to deploy Verteego DS. If you don't have it yet, please install Ansible on your local machine.
+If you don't have it yet, please install Ansible on your local machine. We'll use Ansible to deploy Verteego DS to your remote server.
 
 **Linux**
 
@@ -34,27 +34,30 @@ http://docs.ansible.com/ansible/intro_installation.html
 
 http://docs.ansible.com/ansible/intro_installation.html
 
-3. Install Verteego DSS
-"""""""""""""""""""""""
+3. Install Verteego DS
+""""""""""""""""""""""
 
-**INSTALLATION ON A LOCAL VIRTUAL SERVER**
+**INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
 
-- install virtualbox : https://www.virtualbox.org/wiki/Downloads
-- install vagrant    : https://www.vagrantup.com/docs/installation/
-- Go to the vagrant directory (VDS_ROOT/vagrant) and execute (this may take sometime as it will download a full debian image to install on virtualbox):
+- Install Virtualbox : https://www.virtualbox.org/wiki/Downloads
+- Install Vagrant    : https://www.vagrantup.com/docs/installation/
+- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take sometime as it will download a full debian image to install on virtualbox):
 
 ::
 
+    cd VDS_ROOT/vagrant
     vagrant up
 
 
 
-- Go to ansible directory (VDS_ROOT/vagrant) and execute:
+- Run the Ansible playbook:
+
 ::
 
-    ansible-playbook -i $VDS_ROOT/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key $VDS_ROOT/setup_cluster.yml
+    ansible-playbook -i $VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key $VDS_ROOT/setup_cluster.yml
 
-- Navigate to http://dss.local.verteego:33330
+
+- Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
 
 
 
@@ -102,14 +105,14 @@ You should have a running Google Cloud platform account and the SDK installed. I
     sudo pip install -U apache-libcloud
 
 
-- launch playbook by going to ansible directory and running :
+- Launch playbook:
 
 ::
     ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 
 
-- Be patient... Installation can take several minutes depending on the capacity of the server you've chosen.
-- Navigate to the newly created instance IP at port 33330. You can find it on on your Google Cloud Compute Engine console: http://VDS_INSTANCE_IP:33330
+- Be patient, the deployment of all files can take a while depending on the capacity of the server you've chosen.
+- Navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
 
 
 **LOGIN**
