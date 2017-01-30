@@ -103,7 +103,7 @@ You should have a running Google Cloud platform account and the SDK installed.
      cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/ansible.json
 
 
-- Install libcloud
+**3. Install libcloud**
 
 ::
 
@@ -111,7 +111,7 @@ You should have a running Google Cloud platform account and the SDK installed.
     sudo pip install -U apache-libcloud
 
 
-- Launch playbook:
+**4. Launch playbook**
 
 ::
 
@@ -122,8 +122,13 @@ You should have a running Google Cloud platform account and the SDK installed.
 - Navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
 
 
-**LOGIN**
+3. Sign in
+""""""""""
 
 For your first sign in you can use the following credentials. For security reasons, remember to change them or delete the default user after your first login.
 Username: vds-user
 Password: verteego
+
+
+4. Customize settings
+"""""""""""""""""""""
