@@ -2,25 +2,16 @@
 Installation
 ############
 
-You need to have Ansible installed on your local machine to manage the automatic installation process for you.
-
 **Please note that in the following installation instructions we use 2 placeholders for local directories: VDS_ROOT and SSH_ROOT. Just replace them with the correct directories from your system.**
 
 - VDS_ROOT: directory where Verteego Data Suite will be cloned
 - SSH_ROOT: current user's .ssh directory path
 
-1. Clone Verteego Data Suite
-""""""""""""""""""""""""""""
-Clone the following repository to your local machine (NOT to the remote server where you want to install Verteego DS, as Ansible will automatically deploy the software to the remote server). In the following, this directory is named VDS_ROOT.
-
-::
-
-    git clone git@bitbucket.org:verteegois/dss.git
 
 
-2. Install Ansible
+1. Install Ansible
 """"""""""""""""""
-If you don't have it yet, please install Ansible on your local machine. We'll use Ansible to deploy Verteego DS to your remote server.
+You need to have Ansible installed on your local machine to manage the automatic installation process for you. If you don't have it yet, please install Ansible as we'll use it to deploy Verteego DS to your remote server.
 
 **Linux**
 
@@ -33,6 +24,16 @@ http://docs.ansible.com/ansible/intro_installation.html
 **Windows (Not tested)**
 
 http://docs.ansible.com/ansible/intro_installation.html
+
+
+2. Clone Verteego Data Suite
+""""""""""""""""""""""""""""
+Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). This repository will be called VDS_ROOT afterwards.
+
+::
+
+    git clone git@bitbucket.org:verteegois/dss.git
+
 
 3. Install Verteego DS
 """"""""""""""""""""""
@@ -47,8 +48,6 @@ http://docs.ansible.com/ansible/intro_installation.html
 
     cd VDS_ROOT/vagrant
     vagrant up
-
-
 
 - Run the Ansible playbook:
 
