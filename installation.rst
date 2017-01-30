@@ -123,5 +123,5 @@ You should have a running Google Cloud platform account and the SDK installed. I
 **LOGIN**
 
 For your first sign in you can use the following credentials. For security reasons, remember to change them or delete the default user after your first login.
-Username: dss-user
+Username: vds-user
 Password: verteego
