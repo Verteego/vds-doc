@@ -5,12 +5,12 @@ Installation
 **Please note that in the following installation instructions we use 2 placeholders for local directories: VDS_ROOT and SSH_ROOT. Just replace them with the correct directories from your system.**
 
 - VDS_ROOT: directory where Verteego Data Suite will be cloned
-- SSH_ROOT: current user's .ssh directory path
+- SSH_ROOT: current user's .ssh directory
 
 
 1. Install Ansible
 """"""""""""""""""
-You need to have Ansible installed on your local machine to manage the automatic installation process for you. If you don't have it yet, please install Ansible as we'll use it to deploy Verteego DS to your remote server.
+You need to have Ansible installed on your local machine to manage the automatic installation process for you. If you don't have it yet, please install Ansible as we'll use it to deploy Verteego DS to your remote server or Virtualbox.
 
 **Linux**
 
@@ -25,8 +25,8 @@ http://docs.ansible.com/ansible/intro_installation.html
 http://docs.ansible.com/ansible/intro_installation.html
 
 
-2. Clone Verteego Data Suite
-""""""""""""""""""""""""""""
+2. Clone installation package
+"""""""""""""""""""""""""""""
 Clone the following repository to your local machine (NOT to the remote server on which you want run Verteego DS). This repository will be called VDS_ROOT in the following.
 
 ::
@@ -41,14 +41,14 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 - Install Virtualbox : https://www.virtualbox.org/wiki/Downloads
 - Install Vagrant    : https://www.vagrantup.com/docs/installation/
-- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take sometime as it will download a full debian image to install on Virtualbox):
+- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take some time as it will download a full Debian image to install on Virtualbox):
 
 ::
 
     cd VDS_ROOT/vagrant
     vagrant up
 
-- Run the Ansible playbook:
+- Run the Ansible playbook
 
 ::
 
@@ -63,9 +63,9 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 **1. Install Google Cloud SDK**
 
-You should have a running Google Cloud platform account and the SDK installed. It this is already the case you can directly proceed to step 2.
+You should have a running Google Cloud platform account and the SDK installed.
 
-- Install GCloud SDK : https://cloud.google.com/sdk/docs/
+- Install GCloud SDK: https://cloud.google.com/sdk/docs/
 - Configure your account and project
 
 ::
@@ -82,21 +82,25 @@ You should have a running Google Cloud platform account and the SDK installed. I
 
 
 **2. Set up the VDS environment on Google Cloud**
+
 - Create a Google service account :
     - Go to https://console.cloud.google.com/iam-admin/serviceaccounts
     - Select the project into which you want to create the VDS instance
-    - Create a service account with project editor role:
+    - Create a service account with project editor role
     - Check the "Furnish a new private key" option
     - Chose JSON key type
-    - Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
-::
-
-     mv Downloads/KEYFILE.json VDS_ROOT/deployment/ansible/files/
-
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
+    :scale: 50%
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
+    :scale: 50%
+
+    - Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
+
+::
+
+     cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/ansible.json
 
 
 - Install libcloud
