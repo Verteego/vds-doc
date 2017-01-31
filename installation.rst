@@ -41,7 +41,7 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 **1. Install Google Cloud SDK**
 
-Before you start you should make sure that you have a running Google Cloud platform account and the GCloud SDK installed (to install GCloud SDK: `https://cloud.google.com/sdk/docs`_).
+Before you start you should make sure that you have a running Google Cloud platform account and the GCloud SDK installed (to install GCloud SDK: https://cloud.google.com/sdk/docs).
 
 - Configure your account and project
 
@@ -115,23 +115,9 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 **1. Install Virtualbox and Vagrant**
 
-- Install Virtualbox: `https://www.virtualbox.org/wiki/Downloads`_.
-NB: It is recommended to use the Debian 8 ("Jessie") distribution to optimize compatibility with Vagrant.
+- Install Virtualbox: https://www.virtualbox.org/wiki/Downloads
 
-To install the right distribution of Virtualbox you can use this one-liner (for Linux):
-
-::
-
-    echo "deb http://download.virtualbox.org/virtualbox/debian jessie contrib" | \
-    sudo tee /etc/apt/sources.list.d/virtualbox.list && \
-    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | \
-    sudo apt-key add - && \
-    sudo apt-get update && \
-    sudo apt-get install virtualbox-5.1 && \
-    sudo usermod -G vboxusers -a $USER
-
-
-- Install Vagrant: https://www.vagrantup.com/docs/installation/
+- Install Vagrant: https://www.vagrantup.com/docs/installation
 
 
 **2. Launch Vagrant**
