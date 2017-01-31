@@ -100,13 +100,33 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 
 - Be patient, the deployment of all files can take a while depending on the capacity of the instance you've chosen.
+
+
+**5. Start playing**
+
 - When the installation is terminated, navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
 
 
 **INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
 
-- Install Virtualbox: https://www.virtualbox.org/wiki/Downloads
+
+**1. Install Virtualbox and Vagrant**
+
+- Install Virtualbox: `https://www.virtualbox.org/wiki/Downloads`_.
+NB: It is recommended to use the Debian 8 ("Jessie") distribution to optimize compatibility with Vagrant.
+
+To install the right distribution of Virtualbox you can use this one-liner (for Linux):
+
+::
+
+    echo "deb http://download.virtualbox.org/virtualbox/debian jessie contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list && wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - && sudo apt-get update && sudo apt-get install virtualbox-5.1 && sudo usermod -G vboxusers -a $USER
+
+
 - Install Vagrant: https://www.vagrantup.com/docs/installation/
+
+
+**2. Launch Vagrant**
+
 - Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take a while as it will download a full Debian image to be installed on Virtualbox):
 
 ::
@@ -114,12 +134,15 @@ This will launch the default installation of Verteego Data Suite. For custom set
     cd VDS_ROOT/vagrant
     vagrant up
 
+**3. Installation**
+
 - Launch installation
 
 ::
 
     ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml
 
+**4. Start playing**
 
 - Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
 
