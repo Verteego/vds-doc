@@ -128,14 +128,16 @@ This will launch the default installation of Verteego Data Suite. For custom set
 """"""""""
 
 For your first sign in you can use the following credentials. For security reasons, remember to change them or delete the default user after your first login.
-Username: vds-user
-Password: verteego
+
+- Username: vds-user
+
+- Password: verteego
 
 
 4. Custom settings
 """"""""""""""""""
 
-**Custom infrastructure settings**
+**Customize infrastructure**
 
 Your installation can be easily customised using the different .YML files in the VDS_ROOT/deployment/ansible directory.
 
@@ -144,6 +146,6 @@ Example: Use a high-memory instance on Google Cloud
 - Open VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 - In the vars:machine_type variable replace n1-standard-1 with n1-highmem-16.
 
-**Custom application settings**
+**Customize applications**
 
 Open VDS_ROOT/deployment/ansible/group_vars/all/vars_file.yml to change the default settings for the different applications composing Verteego Data Suite.
