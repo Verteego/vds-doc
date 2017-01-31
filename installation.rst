@@ -96,7 +96,10 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
+    ansible-playbook \
+    -i VDS_ROOT/deployment/ansible/hosts \
+    --private-key=SSH_ROOT/google_compute_engine \
+    VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 
 
 - Be patient, the deployment of all files can take a while depending on the capacity of the instance you've chosen.
@@ -104,7 +107,7 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 **5. Start playing**
 
-- When the installation is terminated, navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
+- When the installation process has finished, navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
 
 
 **INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
@@ -119,7 +122,13 @@ To install the right distribution of Virtualbox you can use this one-liner (for 
 
 ::
 
-    echo "deb http://download.virtualbox.org/virtualbox/debian jessie contrib" | sudo tee /etc/apt/sources.list.d/virtualbox.list && wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | sudo apt-key add - && sudo apt-get update && sudo apt-get install virtualbox-5.1 && sudo usermod -G vboxusers -a $USER
+    echo "deb http://download.virtualbox.org/virtualbox/debian jessie contrib" | \
+    sudo tee /etc/apt/sources.list.d/virtualbox.list && \
+    wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | \
+    sudo apt-key add - && \
+    sudo apt-get update && \
+    sudo apt-get install virtualbox-5.1 && \
+    sudo usermod -G vboxusers -a $USER
 
 
 - Install Vagrant: https://www.vagrantup.com/docs/installation/
@@ -140,7 +149,11 @@ To install the right distribution of Virtualbox you can use this one-liner (for 
 
 ::
 
-    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml
+    ansible-playbook \
+    -i VDS_ROOT/deployment/ansible/hosts \
+    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key \
+    VDS_ROOT/setup_cluster.yml
+
 
 **4. Start playing**
 
@@ -160,7 +173,7 @@ For your first sign in you can use the following credentials. For security reaso
 4. Custom settings
 """"""""""""""""""
 
-**Customize infrastructure**
+**Customize infrastructure settings**
 
 Your installation can be easily customised using the different .YML files in the VDS_ROOT/deployment/ansible directory.
 
@@ -169,6 +182,18 @@ Example: Use a high-memory instance on Google Cloud
 - Open VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 - In the vars:machine_type variable replace n1-standard-1 with n1-highmem-16.
 
-**Customize applications**
+You can also directly precise specific settings in the command line using the --extra-vars parameter while running ansible-playbook.
+
+Example : Use a high-memory instance on Google Cloud and deploy instance in a different zone
+
+::
+
+    ansible-playbook \
+    -i VDS_ROOT/deployment/ansible/hosts \
+    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml \
+    --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
+
+
+**Customize application settings**
 
 Open VDS_ROOT/deployment/ansible/group_vars/all/vars_file.yml to change the default settings for the different applications composing Verteego Data Suite.
