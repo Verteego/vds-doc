@@ -37,35 +37,12 @@ Clone the following repository to your local machine (NOT to the remote server o
 3. Install Verteego DS
 """"""""""""""""""""""
 
-**INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
-
-- Install Virtualbox : https://www.virtualbox.org/wiki/Downloads
-- Install Vagrant    : https://www.vagrantup.com/docs/installation/
-- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take some time as it will download a full Debian image to install on Virtualbox):
-
-::
-
-    cd VDS_ROOT/vagrant
-    vagrant up
-
-- Run the Ansible playbook
-
-::
-
-    ansible-playbook -i $VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key $VDS_ROOT/setup_cluster.yml
-
-
-- Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
-
-
-
 **INSTALLATION ON GOOGLE CLOUD PLATFORM**
 
 **1. Install Google Cloud SDK**
 
-You should have a running Google Cloud platform account and the SDK installed.
+Before you start you should make sure that you have a running Google Cloud platform account and the GCloud SDK installed (to install GCloud SDK: `https://cloud.google.com/sdk/docs`_).
 
-- Install GCloud SDK: https://cloud.google.com/sdk/docs/
 - Configure your account and project
 
 ::
@@ -89,7 +66,7 @@ You should have a running Google Cloud platform account and the SDK installed.
     - Create a service account with project editor role
     - Check the "Furnish a new private key" option
     - Chose JSON key type
-    - Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
+    - When you click the "Create" button, a key file will be the downloaded. Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
 
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
@@ -115,13 +92,40 @@ You should have a running Google Cloud platform account and the SDK installed.
 
 **4. Launch installation**
 
+This will launch the default installation of Verteego Data Suite. For custom settings such as instance calibration, read `this <#custom-settings>`_..
+
 ::
 
     ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 
 
-- Be patient, the deployment of all files can take a while depending on the capacity of the server you've chosen.
-- Navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
+- Be patient, the deployment of all files can take a while depending on the capacity of the instance you've chosen.
+- When the installation is terminated, navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
+
+
+**INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
+
+- Install Virtualbox: https://www.virtualbox.org/wiki/Downloads
+- Install Vagrant: https://www.vagrantup.com/docs/installation/
+- Go to the Vagrant directory (VDS_ROOT/vagrant) and launch Vagrant (this may take a while as it will download a full Debian image to be installed on Virtualbox):
+
+::
+
+    cd VDS_ROOT/vagrant
+    vagrant up
+
+- Launch installation
+
+::
+
+    ansible-playbook -i $VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key $VDS_ROOT/setup_cluster.yml
+
+
+- Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
+
+
+
+
 
 
 3. Sign in
@@ -132,5 +136,5 @@ Username: vds-user
 Password: verteego
 
 
-4. Customize settings
-"""""""""""""""""""""
+4. Custom settings
+""""""""""""""""""
