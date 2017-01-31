@@ -92,7 +92,7 @@ Before you start you should make sure that you have a running Google Cloud platf
 
 **4. Launch installation**
 
-This will launch the default installation of Verteego Data Suite. For custom settings such as instance calibration, read `this <#custom-settings>`_..
+This will launch the default installation of Verteego Data Suite. For custom settings such as instance calibration, read `this <#custom-settings>`_.
 
 ::
 
@@ -118,14 +118,10 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook -i $VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key $VDS_ROOT/setup_cluster.yml
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml
 
 
 - Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
-
-
-
-
 
 
 3. Sign in
@@ -138,3 +134,16 @@ Password: verteego
 
 4. Custom settings
 """"""""""""""""""
+
+**Custom infrastructure settings**
+
+Your installation can be easily customised using the different .YML files in the VDS_ROOT/deployment/ansible directory.
+
+Example: Use a high-memory instance on Google Cloud
+
+- Open VDS_ROOT/deployment/ansible/setup_gc_instance.yml
+- In the vars:machine_type variable replace n1-standard-1 with n1-highmem-16.
+
+**Custom application settings**
+
+Open VDS_ROOT/deployment/ansible/group_vars/all/vars_file.yml to change the default settings for the different applications composing Verteego Data Suite.
