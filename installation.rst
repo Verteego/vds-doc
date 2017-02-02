@@ -146,6 +146,28 @@ This will launch the default installation of Verteego Data Suite. For custom set
 - Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
 
 
+**INSTALLATION ON A REMOTE VIRTUAL PRIVATE SERVER (VPS)**
+
+**Requirements :**
+
+- this playbook is designed to work on a debian 8 distribution, so we assume your VPS to be running a debian 8
+- you should be able to connect o you VPS using a private key without password
+- you should know your VPS's public ip
+- remote user should be part of group sudoer, because we need sudo privileges to run all commands
+
+**1. Install VDS**
+::
+
+    ansible-playbook \
+    -i 'VPS_PUBLIC_IP,' \
+    --private-key=PATH_TO_VPS_PRIVATE_SSH_KEY \
+    -u REMOTE_USER \
+    VDS_ROOT/setup_vps_cluster.yml
+
+**2. Start playing**
+
+- Navigate to http://VPS_PUBLIC_IP:33330
+
 3. Sign in
 """"""""""
 
