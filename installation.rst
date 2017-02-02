@@ -138,7 +138,7 @@ This will launch the default installation of Verteego Data Suite. For custom set
     ansible-playbook \
     -i VDS_ROOT/deployment/ansible/hosts \
     --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key \
-    VDS_ROOT/setup_cluster.yml
+    VDS_ROOT/setup_on_vbox.yml
 
 
 **4. Start playing**
@@ -176,7 +176,7 @@ Example : Use a high-memory instance on Google Cloud and deploy instance in a di
 
     ansible-playbook \
     -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml \
+    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_on_vbox.yml \
     --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
 
 
