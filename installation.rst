@@ -132,13 +132,39 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml
+    ansible-playbook \
+    -i VDS_ROOT/deployment/ansible/hosts \
+    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key \
+    VDS_ROOT/setup_on_vbox.yml
+
 
 
 **4. Start playing**
 
 - Navigate to http://VIRTUALBOX_INSTANCE_IP:33330
 
+
+**INSTALLATION ON A REMOTE VIRTUAL PRIVATE SERVER (VPS)**
+
+**Requirements :**
+
+- this playbook is designed to work on a debian 8 distribution, so we assume your VPS to be running a debian 8
+- you should be able to connect o you VPS using a private key without password
+- you should know your VPS's public ip
+- remote user should be part of group sudoer, because we need sudo privileges to run all commands
+
+**1. Install VDS**
+::
+
+    ansible-playbook \
+    -i 'VPS_PUBLIC_IP,' \
+    --private-key=PATH_TO_VPS_PRIVATE_SSH_KEY \
+    -u REMOTE_USER \
+    VDS_ROOT/setup_vps_cluster.yml
+
+**2. Start playing**
+
+- Navigate to http://VPS_PUBLIC_IP:33330
 
 3. Sign in
 """"""""""
@@ -168,7 +194,11 @@ Example : Use a high-memory instance on Google Cloud and deploy instance in a di
 
 ::
 
-    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
+    ansible-playbook \
+    -i VDS_ROOT/deployment/ansible/hosts \
+    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_on_vbox.yml \
+    --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
+
 
 
 **Customize application settings**
