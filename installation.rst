@@ -68,6 +68,11 @@ Before you start you should make sure that you have a running Google Cloud platf
     - Chose JSON key type
     - When you click the "Create" button, a key file will be the downloaded. Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
 
+::
+
+     cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/ansible.json
+
+
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
     :scale: 50%
@@ -75,11 +80,6 @@ Before you start you should make sure that you have a running Google Cloud platf
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
     :scale: 50%
-
-
-::
-
-     cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/ansible.json
 
 
 **3. Install libcloud**
@@ -96,10 +96,7 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook \
-    -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=SSH_ROOT/google_compute_engine \
-    VDS_ROOT/deployment/ansible/setup_gc_instance.yml
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
 
 
 - Be patient, the deployment of all files can take a while depending on the capacity of the instance you've chosen.
@@ -135,10 +132,7 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook \
-    -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key \
-    VDS_ROOT/setup_cluster.yml
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml
 
 
 **4. Start playing**
@@ -174,10 +168,7 @@ Example : Use a high-memory instance on Google Cloud and deploy instance in a di
 
 ::
 
-    ansible-playbook \
-    -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml \
-    --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_cluster.yml --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
 
 
 **Customize application settings**
