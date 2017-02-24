@@ -6,4 +6,4 @@ Verteego Data Science Suite is aiming to gather the best data science tools into
 
 Installing of Verteego is fast and straight forward. No hassle, no complicated configuration.
 
-Download the installation file `here <http://www.verteego.com>`_.
+Follow the installation instructions `here <http://verteego-dss-doc.readthedocs.io/en/latest/installation.html>`_.
