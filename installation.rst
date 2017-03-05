@@ -132,10 +132,7 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 ::
 
-    ansible-playbook \
-    -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key \
-    VDS_ROOT/setup_on_vbox.yml
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/deployment/setup_on_vbox.yml
 
 
 
