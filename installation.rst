@@ -191,9 +191,9 @@ Example : Use a high-memory instance on Google Cloud and deploy instance in a di
 
 ::
 
-    ansible-playbook \
-    -i VDS_ROOT/deployment/ansible/hosts \
-    --private-key=VDS_ROOT/vagrant/.vagrant/machines/dss/virtualbox/private_key VDS_ROOT/setup_on_vbox.yml \
+    ansible-playbook \n
+    -i VDS_ROOT/deployment/ansible/hosts \n
+    --private-key=SSH_ROOT/google_compute_engine VDS_ROOT/deployment/ansible/setup_gc_instance.yml
     --extra-vars "ginstance_type=n1-highmem-16 gzone=us-central1-f"
 
 
