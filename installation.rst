@@ -183,7 +183,7 @@ Your installation can be easily customised using the different .YML files in the
 Example: Use a high-memory instance on Google Cloud
 
 - Open VDS_ROOT/deployment/ansible/setup_gc_instance.yml
-- In the vars:machine_type variable replace n1-standard-1 with n1-highmem-16.
+- In the vars:machine_type variable replace n1-standard-1 with n1-highmem-16. (see https://cloud.google.com/compute/docs/machine-types)
 
 You can also directly precise specific settings in the command line using the --extra-vars parameter while running ansible-playbook.
 
