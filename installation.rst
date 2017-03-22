@@ -89,6 +89,9 @@ Before you start you should make sure that you have a running Google Cloud platf
     sudo apt-get install python-pip
     sudo pip install -U apache-libcloud
 
+    # in case you encounter an ssl certificate validation issue (https://libcloud.readthedocs.io/en/latest/other/ssl-certificate-validation.html#ssl-certificate-validation-in-v2-0)
+    sudo pip install --upgrade certifi
+
 
 **4. Launch installation**
 
@@ -104,7 +107,8 @@ This will launch the default installation of Verteego Data Suite. For custom set
 
 **5. Start playing**
 
-- When the installation process has finished, navigate to the newly created instance IP (port 33330). You can find it on on your Google Cloud Compute Engine console: http://GC_INSTANCE_IP:33330
+- When the installation process has finished, using a browser, navigate to the newly created instance external IP on port 33330 : http://GC_INSTANCE_EXTERNAL_IP:33330.
+You can find the external ip address on on your Google Cloud Compute Engine web page console (https://console.cloud.google.com/compute/instances).
 
 
 **INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX)**
