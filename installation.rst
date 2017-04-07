@@ -40,7 +40,9 @@ Clone the following repository to your local machine (NOT to the remote server o
 **INSTALLATION ON Amazon web service**
 
 **1. Configure account and fetch needed authentication file**
+
 - Create a key-pair and call it vds:
+
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-1.jpeg
     :scale: 50%
 
@@ -49,15 +51,22 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-3.jpeg
     :scale: 50%
+
 - Change the right of the downloaded file (vds.pem) to 400 :
-```
-chmod 0400 Downloads/vds.pem
-```
+
+::
+
+    chmod 0400 Downloads/vds.pem
+
+
 - Copy it to
-```
-cp Downloads/vds.pem VDS_ROOT/deployment/ansible/files/aws/vds.pem
-```
+::
+
+    cp Downloads/vds.pem VDS_ROOT/deployment/ansible/files/aws/vds.pem
+
+
 - Configure account rights :
+
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-1.jpeg
     :scale: 50%
 
@@ -80,6 +89,7 @@ cp Downloads/vds.pem VDS_ROOT/deployment/ansible/files/aws/vds.pem
     :scale: 50%
 
 - Create Access/Secret keys :
+
 .. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-key-1.jpeg
     :scale: 50%
 
@@ -89,9 +99,11 @@ cp Downloads/vds.pem VDS_ROOT/deployment/ansible/files/aws/vds.pem
 - Copy the Access and secret keys into key.json file under VDS_ROOT/deployment/ansible/files/aws/keys.json
 
 **2. Launch installation**
-```
-ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/deployment/ansible/files/aws/vds.pem -u admin VDS_ROOT/deployment/ansible/setup_on_aws.yml
-```
+
+::
+
+    ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/deployment/ansible/files/aws/vds.pem -u admin VDS_ROOT/deployment/ansible/setup_on_aws.yml
+
 
 **INSTALLATION ON GOOGLE CLOUD PLATFORM**
 
