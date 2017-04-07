@@ -37,6 +37,62 @@ Clone the following repository to your local machine (NOT to the remote server o
 3. Install Verteego DS
 """"""""""""""""""""""
 
+**INSTALLATION ON Amazon web service**
+
+**1. Configure account and fetch needed authentication file**
+- Create a key-pair and call it vds:
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-1.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-2.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-3.jpeg
+    :scale: 50%
+- Change the right of the downloaded file (vds.pem) to 400 :
+```
+chmod 0400 Downloads/vds.pem
+```
+- Copy it to
+```
+cp Downloads/vds.pem VDS_ROOT/deployment/ansible/files/aws/vds.pem
+```
+- Configure account rights :
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-1.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-2.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-3.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-4.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-5.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-6.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-7.jpeg
+    :scale: 50%
+
+- Create Access/Secret keys :
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-key-1.jpeg
+    :scale: 50%
+
+.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-key-2.jpeg
+    :scale: 50%
+
+- Copy the Access and secret keys into key.json file under VDS_ROOT/deployment/ansible/files/aws/keys.json
+
+**2. Launch installation**
+```
+ansible-playbook -i VDS_ROOT/deployment/ansible/hosts --private-key=VDS_ROOT/deployment/ansible/files/aws/vds.pem -u admin VDS_ROOT/deployment/ansible/setup_on_aws.yml
+```
+
 **INSTALLATION ON GOOGLE CLOUD PLATFORM**
 
 **1. Install Google Cloud SDK**
@@ -66,11 +122,11 @@ Before you start you should make sure that you have a running Google Cloud platf
     - Create a service account with project editor role
     - Check the "Furnish a new private key" option
     - Chose JSON key type
-    - When you click the "Create" button, a key file will be the downloaded. Copy the downloaded key file to VDS_ROOT/deployment/ansible/files and rename it to ansible.json
+    - When you click the "Create" button, a key file will be the downloaded. Copy the downloaded key file to VDS_ROOT/deployment/ansible/files/gcp and rename it to ansible.json
 
 ::
 
-     cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/ansible.json
+     cp Downloads/ORIGINAL_KEYFILE.json VDS_ROOT/deployment/ansible/files/gcp/ansible.json
 
 
 
