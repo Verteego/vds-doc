@@ -179,21 +179,6 @@ This will launch the default installation of Verteego Data Suite. For custom set
 You can find the external ip address on on your Google Cloud Compute Engine web page console (https://console.cloud.google.com/compute/instances).
 
 
-**INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX) BY IMAGE IMPORT**
-
-**1. Install Virtualbox and Vagrant**
-
-- Install Virtualbox: https://www.virtualbox.org/wiki/Downloads
-
-**2. Download vds virtualbox images**
-
-https://storage.googleapis.com/verteego-vds/vm/vds-27032017_150200.ova
-
-**3. Import images into virtualbox**
-
-https://docs.oracle.com/cd/E26217_01/E26796/html/qs-import-vm.html
-
-
 **INSTALLATION ON A LOCAL VIRTUAL SERVER (VIRTUALBOX) FROM SOURCES**
 
 
