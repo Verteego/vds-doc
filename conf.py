@@ -45,7 +45,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Verteego DSS'
+project = u'Verteego VDS'
 copyright = u'2017, Verteego'
 author = u'Verteego'
 
@@ -99,7 +99,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'VerteegoDSSdoc'
+htmlhelp_basename = 'VerteegoVDSdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -126,7 +126,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'VerteegoDSS.tex', u'Verteego DSS Documentation',
+    (master_doc, 'VerteegoVDS.tex', u'Verteego VDS Documentation',
      u'Verteego', 'manual'),
 ]
 
@@ -136,7 +136,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'verteegodss', u'Verteego DSS Documentation',
+    (master_doc, 'verteegovds', u'Verteego VDS Documentation',
      [author], 1)
 ]
 
@@ -147,8 +147,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'VerteegoDSS', u'Verteego DSS Documentation',
-     author, 'VerteegoDSS', 'One line description of project.',
+    (master_doc, 'VerteegoVDS', u'Verteego VDS Documentation',
+     author, 'VerteegoVDS', 'One line description of project.',
      'Miscellaneous'),
 ]
 

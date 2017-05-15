@@ -12,7 +12,8 @@ Verteego's purpose is to provide a bundle of tools covering all common requireme
     :caption: Installation
 
     getting-started
-    installation
+    ansible
+    docker
 
 .. toctree::
     :maxdepth: 2
