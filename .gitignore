@@ -1,5 +1,5 @@
 /.idea
 venv
 *.pyc
-_build
+/_build
 /target
