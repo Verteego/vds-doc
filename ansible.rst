@@ -44,13 +44,13 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 - Create a key-pair and call it vds:
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-1.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/create-key-pair-1.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-2.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/create-key-pair-2.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/create-key-pair-3.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/create-key-pair-3.jpeg
     :scale: 50%
 
 - Change the right of the downloaded file (vds.pem) to 400 :
@@ -68,33 +68,33 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 - Configure account rights :
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-1.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-1.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-2.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-2.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-3.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-3.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-4.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-4.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-5.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-5.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-6.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-6.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-right-7.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-right-7.jpeg
     :scale: 50%
 
 - Create Access/Secret keys :
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-key-1.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-key-1.jpeg
     :scale: 50%
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/account-key-2.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/account-key-2.jpeg
     :scale: 50%
 
 - Copy the Access and secret keys into key.json file under VDS_ROOT/deployment/ansible/files/aws/keys.json
@@ -144,11 +144,11 @@ Before you start you should make sure that you have a running Google Cloud platf
 
 
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/step_01.jpeg
     :scale: 50%
 
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/step_02.jpeg
     :scale: 50%
 
 

@@ -2,7 +2,7 @@
 Dataflow
 ########
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/dataflow.png
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/dataflow.png
 
 The dataflow represents the backbone of your data science projects. It describes the different steps your data will run through from its source to prediction and visualization.
 

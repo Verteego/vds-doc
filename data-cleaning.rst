@@ -2,7 +2,7 @@
 Data cleaning
 #############
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/data-cleaning.png
+.. image:: https://vds-doc.readthedocs.io/en/latest/_static/images/data-cleaning.png
 
 The data cleaning module provides a powerful user interface to define a stack of data cleaning tasks that can be applied to any file running through your dataflow.
 

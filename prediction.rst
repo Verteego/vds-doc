@@ -2,7 +2,7 @@
 Prediction
 ##########
 
-.. image:: http://verteego-dss-doc.readthedocs.io/en/latest/_static/images/prediction.png
+.. image:: http://vds-doc.readthedocs.io/en/latest/_static/images/prediction.png
 
 The prediction module offers a simple and powerful way to produce predictive models without writing a line of code.
 
