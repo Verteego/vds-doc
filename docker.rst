@@ -22,7 +22,7 @@ Docker
 """""""""""""""""""""""""""""
 ::
 
-    git clone git@github.com:Verteego/vds.git
+    git clone https://github.com/Verteego/vds.git
 
 3. Install Verteego DS
 """"""""""""""""""""""

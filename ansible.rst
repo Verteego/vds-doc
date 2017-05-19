@@ -31,7 +31,7 @@ Clone the following repository to your local machine (NOT to the remote server o
 
 ::
 
-    git clone git@github.com:Verteego/vds.git
+    git clone https://github.com/Verteego/vds.git
 
 
 3. Install Verteego DS
