@@ -6,7 +6,8 @@ Docker
 1. Install Docker
 """"""""""""""""""
 | Head to https://www.docker.com/community-edition#/download and download and install docker for your specfic plateform, docker is supported by Windows, Mac Os, Linux.
-| Once installed you'll have access to docker command (docker and docker-compose) using the command line.
+| Similarly head to https://docs.docker.com/compose/install/ and install docker-compose.
+| Once installed you'll have access to docker and docker-compose commands using the command line.
 
 ::
 
