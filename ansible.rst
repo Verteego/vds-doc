@@ -157,7 +157,7 @@ Before you start you should make sure that you have a running Google Cloud platf
 ::
 
     sudo apt-get install python-pip
-    sudo pip install -U apache-libcloud
+    sudo pip install apache-libcloud==1.5.0
 
     # in case you encounter an ssl certificate validation issue (https://libcloud.readthedocs.io/en/latest/other/ssl-certificate-validation.html#ssl-certificate-validation-in-v2-0)
     sudo pip install --upgrade certifi
