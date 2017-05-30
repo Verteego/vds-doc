@@ -221,19 +221,21 @@ You can find the external ip address on on your Google Cloud Compute Engine web 
 
 **Requirements :**
 
-- this playbook is designed to work on a debian 8 distribution, so we assume your VPS to be running a debian 8
-- you should be able to connect o you VPS using a private key without password
+- this playbook is designed to work on a **debian 8** distribution, so we assume your VPS to be running a debian 8
+- you should be able to connect o you VPS using a private key **without password**
 - you should know your VPS's public ip
-- remote user should be part of group sudoer, because we need sudo privileges to run all commands
+- remote user should be part of group **sudoer**, because we need sudo privileges to run all commands
+- your server should **expose the port range 33330 to 33335**, to enable external access to the verteego datasuite.
+
 
 **1. Install VDS**
 ::
-
+    # **pay attention to the comma after the VPS_PUBLIC_IP**
     ansible-playbook \
     -i 'VPS_PUBLIC_IP,' \
     --private-key=PATH_TO_VPS_PRIVATE_SSH_KEY \
     -u REMOTE_USER \
-    VDS_ROOT/setup_vps_cluster.yml
+    VDS_ROOT/setup_on_vps.yml
 
 **2. Start playing**
 
