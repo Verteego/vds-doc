@@ -230,7 +230,7 @@ You can find the external ip address on on your Google Cloud Compute Engine web 
 
 **1. Install VDS**
 ::
-    # **pay attention to the comma after the VPS_PUBLIC_IP**
+    # Pay attention to the comma after the VPS_PUBLIC_IP
     ansible-playbook \
     -i 'VPS_PUBLIC_IP,' \
     --private-key=PATH_TO_VPS_PRIVATE_SSH_KEY \
